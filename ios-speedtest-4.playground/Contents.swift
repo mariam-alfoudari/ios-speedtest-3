@@ -6,21 +6,22 @@ import UIKit
 
 //MARK: for- in loop خمس مرات باستخدام ال "iOS" قم بطباعه
 
-
-
+for _ in 1...5{
+print("iOS")
+}
 
 //: # 2️⃣ function
 
 // MARK: هذي الداله تقوم بضرب رقمين و ترجع الناتج
 
-func multiplication(  number1 : Int ,  number2 : Int)
+func multiplication(  number1 : Int ,  number2 : Int) -> Int
 {
     
-    return number1 * number2
+    return (number1 * number2)
 }
 // MARK:   بما يناسب صيغه هذا الاستدعاء multiplication قم بتعديل  الداله
 
-multiplication(5,7)
+multiplication (number1: 5 ,number2: 7)
 
 
 
@@ -31,4 +32,9 @@ multiplication(5,7)
 
 
 // MARK:  الكائن  object مبنية علي هذي struct  قم بكتابة كود ال
-var student = Student(name: "Omar", age: 25 , hobbies: ["Coding", "drawing"])
+struct student{
+    var name: String
+    var age: Int
+    var hobbies:[String]
+}
+var studenst = student(name: "Omar", age: 25 , hobbies: ["Coding", "drawing"])
